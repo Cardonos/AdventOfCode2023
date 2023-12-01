@@ -22,9 +22,5 @@ for i in input:
         except:
             j += 1
     fullNum = int(str(digOne) + str(digTwo))
-    print(digOne)
-    print(digTwo)
-    print(fullNum)
     output = output + fullNum
-
 print(output)
