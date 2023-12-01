@@ -11,7 +11,7 @@ Summe = 0
 parsedData = []
 
 for i in data:
-    result = re.findall(r"\d|one|tw|wo|thre|hree|four|five|six|seven|eigh|ight|nine", data[j])
+    result = re.findall(r"\d|one|tw|wo|thre|hree|four|five|six|seven|eigh|ight|nine|ine", data[j])
     parsedData.append(result)
     j += 1
 
