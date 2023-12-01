@@ -1,3 +1,4 @@
+import re
 data = open("Inputs/1.12.txt").read().split("\n")
 
 output = []
@@ -38,24 +39,12 @@ for i in data:
             lineFinished = True
             output.append(currLine)
 
-finalSum = 0
+j = 0
+Summe = 0
 for i in output:
-    digOne = 0
-    digTwo = 0
-    j = 0
-    while j <= (len(i) + 1):
-        try:
-            digOne = digOne + int(i[j])
-            break
-        except:
-            j += 1
-    j = 0
-    while j <= (len(i) + 1):
-        try:
-            digTwo = digTwo + int(i[(len(i) + 1) - j])
-            break
-        except:
-            j += 1
-    fullNum = int(str(digOne) + str(digTwo))
-    finalSum = finalSum + fullNum
-print(finalSum)
+    result = re.findall(r"\d", output[j])
+    twoDigit = (result[0]+result[-1])
+    Summe = Summe + int(twoDigit)
+    j += 1
+print(Summe)
+
