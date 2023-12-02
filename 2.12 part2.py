@@ -16,7 +16,6 @@ parsedData = tempData
 tempData = []
 
 sumOfPowers = 0
-
 k = 0
 while k <= len(parsedData)-2:
     minRed = 0

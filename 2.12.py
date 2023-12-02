@@ -18,7 +18,6 @@ tempData = []
 numberRed = 12
 numberGreen = 13
 numberBlue = 14
-
 sumOfPossible = 0
 
 k = 0
