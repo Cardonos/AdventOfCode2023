@@ -1,7 +1,7 @@
 data = open("Inputs/2.12.txt").read().split("\n")
 
-parsedData=[]
-tempData=[]
+parsedData = []
+tempData = []
 for i in data:
     tempData.append(i.split(": "))
 
@@ -40,12 +40,6 @@ while k <= len(parsedData)-2:
             m += 1
         l += 1
     if gamePossible:
-        print(parsedData[k][-1][5:])
         sumOfPossible = sumOfPossible + int(parsedData[k][-1][5:])
     k += 2
 print(sumOfPossible)
-
-#print(parsedData[2][-1][5:])
-#print(parsedData[1][1].split(", "))
-#print(parsedData[1][1].split(", ")[0][-1])
-#print(int(parsedData[1][1].split(", ")[1][0:2]))
